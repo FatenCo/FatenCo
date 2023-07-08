@@ -1,0 +1,9 @@
+<h2>Ma Sélection</h2>
+<div *ngIf="maSelection.length > 0">
+  <ul>
+    <li *ngFor="let item of maSelection">{{ item }}</li>
+  </ul>
+</div>
+<div *ngIf="maSelection.length === 0">
+  <p>Aucun élément sélectionné pour le moment.</p>
+</div>

@@ -1,0 +1,56 @@
+/* Styles pour la liste de bons plans */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    animation: fadeInUp 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  li:hover {
+    background-color: #6C4AB6;
+  }
+  
+  /* Animation de fondu */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Styles pour le message lorsque aucun bon plan n'est disponible */
+  .no-bon-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 20px;
+    color: #666;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

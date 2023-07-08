@@ -1,0 +1,9 @@
+<div *ngIf="bonsPlans.length > 0">
+    <ul>
+      <li *ngFor="let bonPlan of bonsPlans">{{ bonPlan }}</li>
+    </ul>
+  </div>
+  <div *ngIf="bonsPlans.length === 0">
+    <p>Aucun bon plan disponible pour le moment.</p>
+  </div>
+  
